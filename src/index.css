@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  background-color: #EEF1FF;
+  padding: 1.5em 2em;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.card__quote {
+  text-align: justify;
+  padding-bottom: 20px;
+}
+
+.card__author {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card__button {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  transition: filter 100ms ease, transform 100ms ease;
+}
+
+.card__button:hover {
+  filter: brightness(1.4);
+  transform: scale(1.05);
+  transition: filter 100ms ease, transform 100ms ease;
+}
